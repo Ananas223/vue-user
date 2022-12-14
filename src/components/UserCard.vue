@@ -1,6 +1,6 @@
 <template>
     <div class="user-card">
-        <img src="assets/img/70.jpg" class="user-photo">
+        <img src="../assets/img/70.jpg" class="user-photo">
         <p class="user-nickname">romashka</p>
         <p class="user-name">
             {{ surname }} {{ name }}<br>
@@ -8,15 +8,15 @@
         </p>
         <hr>
         <p class="user-info-item">
-            <img src="assets/img/location.png">
+            <img src="../assets/img/location.png">
             {{ location }}
         </p>
         <p class="user-info-item">
-            <img src="assets/img/mail.png">
+            <img src="../assets/img/mail.png">
             {{ mail }}
         </p>
         <p class="user-info-item">
-            <img src="assets/img/phone.png">
+            <img src="../assets/img/phone.png">
             {{ phone }}
         </p>
     </div>

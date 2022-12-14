@@ -1,15 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <UserCard 
+  v-bind:name="name"
+  v-bind:surname="surname"
+  v-bind:patr="patr"
+  v-bind:location="location"
+  v-bind:mail="mail"
+  v-bind:phone="phone"></UserCard>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import UserCard from './components/UserCard.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    UserCard
+  },
+  data(){
+    return{
+    name: 'Иван',
+    surname: 'Иванов',
+    patr: 'Иванович',
+    location: 'Москва',
+    mail: 'mail@',
+    phone: '88000000',
+    }
   }
 }
 </script>
