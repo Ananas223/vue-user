@@ -3,21 +3,21 @@
         <img src="assets/img/70.jpg" class="user-photo">
         <p class="user-nickname">romashka</p>
         <p class="user-name">
-            Иванов Иван<br>
-            Иванович
+            {{ surname }} {{ name }}<br>
+            {{ patr }}
         </p>
         <hr>
         <p class="user-info-item">
             <img src="assets/img/location.png">
-            Москва, Юбилейная 50
+            {{ location }}
         </p>
         <p class="user-info-item">
             <img src="assets/img/mail.png">
-            coldrabbit48@example.com
+            {{ mail }}
         </p>
         <p class="user-info-item">
             <img src="assets/img/phone.png">
-            +7-495-266-57-34
+            {{ phone }}
         </p>
     </div>
 </template>
@@ -25,7 +25,8 @@
 <script>
 
     export default {
-        name: UserCard
+        name: 'UserCard',
+        props: ['name', 'surname', 'patr', 'location', 'mail', 'phone']
     }
 
 </script>
